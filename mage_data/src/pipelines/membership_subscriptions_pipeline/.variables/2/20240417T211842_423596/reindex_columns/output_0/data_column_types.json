@@ -1,0 +1,1 @@
+{"report_date": "str", "user_id": "int64", "days_active": "int64", "contract_length": "str", "money_spent": "int64", "occupation": "str", "cancelled": "str", "invites_sent": "int64", "used_coupon_code": "str"}

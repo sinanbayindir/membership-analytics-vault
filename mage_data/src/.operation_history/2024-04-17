@@ -1,0 +1,2 @@
+{"operation": "create", "resource": {"type": "pipeline", "uuid": "health_expanditure_pipeline"}, "timestamp": 1713376739, "user": null}
+{"operation": "create", "resource": {"type": "pipeline", "uuid": "membership_subscriptions_pipeline"}, "timestamp": 1713379490, "user": null}

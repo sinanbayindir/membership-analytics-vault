@@ -1,0 +1,1 @@
+{"cancelled": "str", "contract_length": "str", "days_active": "int64", "invites_sent": "int64", "money_spent": "int64", "occupation": "str", "used_coupon_code": "str", "user_id": "int64"}
