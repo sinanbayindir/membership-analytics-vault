@@ -11,17 +11,42 @@ sources:
 
 
 models:
-    - name: check_user_id
-      description: "Checks the validity of the user ID and retrieves associated data."
-      columns:
-          - name: user_id
-            description: "Subscribers unique user id"
-            tests:
-                - not_null
-    - name: check_monthly_revenue
-      description: "Verifies the daily revenue data and retrieves relevant information."
-      columns:
-          - name: money_spent
-            description: "Monthly basis"
-            tests:
-                - not_null
+  - name: check_user_id
+    description: "Checks the validity of the user ID and retrieves associated data."
+    columns:
+      - name: user_id
+        description: "Subscriber's unique user ID"
+        tests:
+          - not_null
+
+  - name: check_monthly_revenue
+    description: "Verifies the monthly revenue data and retrieves relevant information."
+    columns:
+      - name: money_spent
+        description: "Monthly spending"
+        tests:
+          - not_null
+
+  - name: occupation_distribution
+    description: "Calculates the distribution of users by occupation."
+    columns:
+      - name: occupation
+        description: "Occupation of the user"
+        tests:
+          - not_null
+
+  - name: coupon_code_distribution
+    description: "Calculates the distribution of users by coupon code usage."
+    columns:
+      - name: used_coupon_code
+        description: "Indicates whether a coupon code was used"
+        tests:
+          - not_null
+
+  - name: cancellation_status_distribution
+    description: "Calculates the distribution of users by subscription cancellation status."
+    columns:
+      - name: cancelled
+        description: "Subscription cancellation status"
+        tests:
+          - not_null

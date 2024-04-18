@@ -6,12 +6,15 @@
 
 with
     monthly_revenue as (
-        select report_date, sum(money_spent) as monthly_spending
+        select
+            count(distinct user_id) as total_users,
+            sum(money_spent) as total_money_spent,
+            avg(money_spent) as average_money_spent,
+            avg(days_active) as average_days_active,
+            avg(invites_sent) as average_invites_sent
         from {{ source("stgd", "membership_subscriptions") }}
-        where contract_length = 'monthly'
-        group by report_date
+        where cancelled = 'no'
     )
 
-select report_date, monthly_spending
+select *
 from monthly_revenue
-
