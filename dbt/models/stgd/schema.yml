@@ -1,0 +1,27 @@
+version: 2
+
+sources:
+  - name: stgd # this is the source_name
+    database: membership-analytics-vault
+    schema: membership_analytics_vault
+
+    tables:
+      - name: membership_subscriptions
+  
+
+
+models:
+    - name: check_user_id
+      description: "Checks the validity of the user ID and retrieves associated data."
+      columns:
+          - name: user_id
+            description: "Subscribers unique user id"
+            tests:
+                - not_null
+    - name: check_monthly_revenue
+      description: "Verifies the daily revenue data and retrieves relevant information."
+      columns:
+          - name: money_spent
+            description: "Monthly basis"
+            tests:
+                - not_null
