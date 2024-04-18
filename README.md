@@ -28,7 +28,7 @@ This problem statement clearly outlines the project's objective, challenges enco
 
 ## Data Visualizations
 
-Data Visualizations for this project can be found here. [https://lookerstudio.google.com/reporting/16614772-a85a-4b9c-812a-82e722f52c96](https://lookerstudio.google.com/reporting/16614772-a85a-4b9c-812a-82e722f52c96)
+Data Visualizations for this project can be found here. [Link](https://lookerstudio.google.com/s/lsDdUBg9a1k)
 
 
 
